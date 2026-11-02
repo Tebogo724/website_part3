@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartments for Rent  | Tebogo Property Enterprise</title>
+    <meta name="description" content="Discover apartments for rent in Cape Town with Tebogo Property Enterprise. Explore available rental options, property images and rental prices.">
+    <link rel="stylesheet" href="css_assets/css_business.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js_assets/business.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <img src="_images/logo.png"
+         alt="Tebogo Property Enterprise Logo"
+         width="200"
+         height="200">
+</header>
+      <!-------Navigation/quick access links to each page-->
+      <nav>
+    <button id="menu-button" class="menu-button" type="button">
+        Menu
+    </button>
+
+    <ul id="navigation-menu">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About us.html">About us</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Rentals.html">Rentals</a></li>
+        <li><a href="Houses.html">Houses</a></li>
+        <li><a href="Enquiry.html">Enquiry</a></li>
+    </ul>
+</nav>
+                       <!--Apartments we offer-->
+
+                   <main>
+
+  <h1>Apartments for Rent</h1>
+    <h2>Find Your Ideal Home</h2>
+    <div class="property-list">
+
+    <div class="property-card">
+
+       <div class="property-gallery">
+
+ <img id="featured-image"
+     src="_images/apartment_building.jpg"
+     alt="Newly built apartments in Cape Town"
+     onclick="openLightbox()">
+
+    <div class="gallery-thumbnails">
+<img src="_images/apartment_building.jpg"
+     alt="Brand new apartments"
+     onclick="openLightbox('building')">
+
+<img src="_images/apartments_two.jpg"
+     alt="Two-bedroom apartments"
+     onclick="openLightbox('two-bedroom')">
+
+<img src="_images/apartments_three.jpg"
+     alt="Single-bedroom apartments"
+     onclick="openLightbox('single-bedroom')">
+
+    </div>
+
+</div>
+
+<section class="map-section">
+    <h2>Find Our Properties</h2>
+    <p>Explore the Cape Town area where our listed properties are located.</p>
+
+    <div id="property-map"></div>
+</section>
+
+<div id="lightbox" class="lightbox">
+
+    <div class="property-viewer">
+
+        <div class="viewer-controls">
+
+    <button type="button" onclick="previousProperty()">Previous</button>
+
+    <button type="button" onclick="closeLightbox()">Close</button>
+
+    <button type="button" onclick="nextProperty()">Next</button>
+
+</div>
+
+        <img id="lightbox-image" src="" alt="">
+
+        <div class="property-details">
+            <h2 id="property-title"></h2>
+            <p id="property-location"></p>
+            <p id="property-price"></p>
+            <p id="property-description"></p>
+        </div>
+
+    </div>
+
+</div>
+
+
+</main>
+
+<body>
+
+    
+</body>
+</html>

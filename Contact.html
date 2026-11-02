@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Web page name-->
+    <title>Contact Us | Tebogo Property Enterprise</title>
+    <meta name="description" content="Contact Tebogo Property Enterprise for property enquiries, information about available homes and rentals, and assistance with your property needs.">
+  
+      <link rel="stylesheet" href="css_assets/css_business.css">
+      <script src="js_assets/business.js" defer></script>
+</head>
+<body>
+
+       <header>
+   <img src="_images/logo.png"
+     alt="Tebogo Property Enterprise Logo"
+     width="200"
+     height="200">
+</header>
+      <!-------Navigation/quick access links to each page-->
+      <nav>
+    <button id="menu-button" class="menu-button" type="button">
+        Menu
+    </button>
+
+    <ul id="navigation-menu">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About us.html">About us</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Rentals.html">Rentals</a></li>
+        <li><a href="Houses.html">Houses</a></li>
+        <li><a href="Enquiry.html">Enquiry</a></li>
+    </ul>
+</nav>
+                     <main>
+    <!-- Main heading -->
+   <h1>Contact Tebogo Property Enterprise</h1>
+
+    <div class="contact-content">
+
+        <!-- Business main branch building -->
+        <div class="building">
+            <img class="building-image" src="_images/building.jpg" alt="Tebogo Property Enterprise Building">
+        </div>
+
+        <!-- Business contact information -->
+        <div class="contact-information">
+
+            <h2>Email Us At:</h2>
+            <p><a href="mailto:infotebogo@properties.co.za">infotebogo@properties.co.za</a></p>
+
+            <h2>Our Phone Number:</h2>
+            <p>011 346 9683</p>
+
+            <h2>Our Physical Address:</h2>
+            <p>25 Nona Street, Johannesburg, South Africa</p>
+            <p>143 Strydom Street, Cape Town, South Africa</p>
+
+            <!-- Business social media platforms -->
+            <h2>Find Us On:</h2>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">Facebook</a></p>
+
+        </div>
+
+    </div>
+
+    
+<section class="contact-form-section">
+    <h2>Contact Us</h2>
+
+    <p>Complete the form below to get in touch with us.</p>
+
+    <form id="contact-form">
+
+        <label for="contact-name">Full Name:</label>
+        <input type="text" id="contact-name" required>
+
+        <label for="contact-email">Email Address:</label>
+        <input type="email" id="contact-email" required>
+
+        <label for="contact-phone">Contact Number:</label>
+        <input type="tel" id="contact-phone" required>
+
+        <label for="contact-subject">Subject:</label>
+        <input type="text" id="contact-subject" required>
+
+        <label for="contact-message">Your Message:</label>
+        <textarea id="contact-message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <p id="contact-response" aria-live="polite"></p>
+
+    </form>
+</section>
+
+
+</main> 
+</body>
+
+</html>

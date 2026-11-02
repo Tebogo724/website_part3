@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Property Enquiry | Tebogo Property Enterprise</title>
+    <meta name="description" content="Submit a property enquiry to Tebogo Property Enterprise about houses for sale and apartments for rent.">
+
+    <link rel="stylesheet" href="css_assets/css_business.css">
+    <script src="js_assets/business.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Property Enquiry</h1>
+
+        <nav>
+            <button id="menu-button" class="menu-button" type="button">
+                Menu
+            </button>
+
+            <ul id="navigation-menu">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About us.html">About us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Rentals.html">Rentals</a></li>
+                <li><a href="Houses.html">Houses</a></li>
+                <li><a href="Enquiry.html">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="enquiry-section">
+            <h2>Send Us a Property Enquiry</h2>
+
+            <p>
+                Complete the form below to enquire about a property,
+                its availability or its price.
+            </p>
+
+            <form id="enquiry-form">
+
+                <label for="enquiry-name">Full Name:</label>
+                <input type="text" id="enquiry-name" name="name" required>
+
+                <label for="enquiry-email">Email Address:</label>
+                <input type="email" id="enquiry-email" name="email" required>
+
+                <label for="enquiry-phone">Contact Number:</label>
+                <input type="tel" id="enquiry-phone" name="phone"
+                       required>
+
+                <label for="enquiry-type">Type of Enquiry:</label>
+                <select id="enquiry-type" name="enquiry-type" required>
+                    <option value="">Select an enquiry type</option>
+                    <option value="Buying a property">Buying a property</option>
+                    <option value="Renting a property">Renting a property</option>
+                    <option value="Property availability">Property availability</option>
+                    <option value="Property pricing">Property pricing</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="enquiry-message">Your Message:</label>
+                <textarea id="enquiry-message" name="message"
+                          rows="6" required></textarea>
+
+                <button type="submit">Submit Enquiry</button>
+
+                <p id="enquiry-response" aria-live="polite"></p>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
